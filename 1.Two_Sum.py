@@ -21,13 +21,13 @@ class Solution:
         if(len(nums) > 1):
             d = {}
             for i in range(len(nums)):
-                if nums[i] in d.values():
-                    return [list(d.values()).index(nums[i]), i]
+                if nums[i] in d:
+                    return [d[nums[i]], i]
                 else:
-                    d[i] = target - nums[i]
+                    d[target - nums[i]] = i
 
 
-# l = [2,7,11,15]
-# c = Solution().twoSum(l, 9)
-# print(c)
+l = [2,7,11,15]
+c = Solution().twoSum(l, 9)
+print(c)
 # [0,1]
