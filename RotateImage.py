@@ -20,8 +20,8 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: void Do not return anything, modify matrix in-place instead.
         """
-        # Time
-        # Space
+        # Time O(N^2)
+        # Space in-place
         # method - transpose the 2D array and then flip each row to modify in-place
         rows = len(matrix)
         cols = len(matrix[0])
