@@ -27,4 +27,4 @@ class Solution(object):
 
 # Alternative solution - using XOR gate
 l = [4,2,1,2,1]
-print(reduce(lambda  x,y : x^y,l)) #O(n) using XOR implementation 
+print(reduce(lambda  x,y : x^y,l)) #O(n) using XOR implementation

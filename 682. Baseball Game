@@ -4,4 +4,3 @@ class Solution(object):
         :type ops: List[str]
         :rtype: int
         """
-        

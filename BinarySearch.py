@@ -7,9 +7,11 @@ class BinarySearch(object):
         """
         # Iterative Implementation of Binary Search
         left, right = 0, len(nums) - 1
+        found = False
         while((left <= right) and not found):
             mid = (left + right) / 2
             if target == nums[mid]:
+                found = True
                 return mid
             else:
                 if target < nums[mid]:
@@ -28,7 +30,7 @@ class BinarySearch(object):
         # Implements Binary Seach in Recursive fashion
         def Func(left, right):
             if left > right:
-                return -1
+                return - 1
             mid = (left + right) / 2
             if(nums[mid] == target):
                 return mid
